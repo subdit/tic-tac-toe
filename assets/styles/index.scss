@@ -4,6 +4,10 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 body {
   margin: 20px;
 }
+  h1 {
+    align-items: center;
+  }
+
 
 .row {
   display: flex;
@@ -12,8 +16,8 @@ body {
 .row div {
   display: flex;
   border: 1px solid black;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   align-items: center;
   justify-content: center;
 }
