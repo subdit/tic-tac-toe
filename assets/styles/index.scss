@@ -1,2 +1,19 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body {
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.row div {
+  display: flex;
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
+   <head>
       <title>API Token Authentication</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body>
+   </head>
+   <body>
       <h1>Tic Tac Toe Game</h1>
-
       <h4 id="message"></h4>
-
-       <form id='sign-up' class='border'>
+      <form id='sign-up' class='border'>
          <fieldset>
-           <legend>Sign Up</legend>
-           <input type="email" name="credentials[email]" placeholder="Email">
-           <input type="password" name="credentials[password]" placeholder="Password">
-           <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
-           <button type="submit">Sign Up</button>
+            <legend>Sign Up</legend>
+            <input type="email" name="credentials[email]" placeholder="Email">
+            <input type="password" name="credentials[password]" placeholder="Password">
+            <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+            <button type="submit">Sign Up</button>
          </fieldset>
-       </form>
-
-       <form id='sign-in' class='boder'>
+      </form>
+      <form id='sign-in' class='boder'>
          <fieldset>
-           <legend>Sign In</legend>
-           <input type="email" name="credentials[email]" placeholder="Email">
-           <input type="password" name="credentials[password]" placeholder="password">
-           <button type="submit">Sign In</button>
+            <legend>Sign In</legend>
+            <input type="email" name="credentials[email]" placeholder="Email">
+            <input type="password" name="credentials[password]" placeholder="password">
+            <button type="submit">Sign In</button>
          </fieldset>
-       </form>
-
-       <form id="change-password"</form>
+      </form>
+      <form id="change-password">
          <fieldset>
-           <legend>Change Password</legend>
-           <input type="password" name="password[old]" placeholder="Old Password">
-           <input type="password" name="password[new]" placeholder="New Password">
-           <button type="change password">Change Password</button>
+            <legend>Change Password</legend>
+            <input type="password" name="password[old]" placeholder="Old Password">
+            <input type="password" name="password[new]" placeholder="New Password">
+            <button type="change password">Change Password</button>
          </fieldset>
-
-         <button id='sign-out'>Sign Out</button>
-
-      <div table >
-
+      </form>
+      <button id='sign-out'>Sign Out</button>
+      <div>
+         <div class="row">
+            <div class="square1">1</div>
+            <div class="square2">2</div>
+            <div class="square3">3</div>
+         </div>
+         <div class="row">
+            <div class="square4">4</div>
+            <div class="square5">5</div>
+            <div class="square6">6</div>
+         </div>
+         <div class="row">
+            <div class="square7">7</div>
+            <div class="square8">8</div>
+            <div class="square9">9</div>
+         </div>
       </div>
-
-
-    </body>
+   </body>
+</html>
 </html>
