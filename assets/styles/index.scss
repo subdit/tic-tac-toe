@@ -4,20 +4,20 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 body {
   margin: 20px;
 }
-  h1 {
-    align-items: center;
-  }
-
+h1 {
+  text-align: center;
+  text-color: blue;
+}
 
 .row {
   display: flex;
 }
-
 .row div {
   display: flex;
-  border: 1px solid black;
-  width: 90px;
-  height: 90px;
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
   align-items: center;
   justify-content: center;
+  background-color: orange;
 }
