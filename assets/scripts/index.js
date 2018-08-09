@@ -8,5 +8,6 @@
 
 $(() => {
   // your JS code goes here
+  //var player1 = function () {
 
 })
