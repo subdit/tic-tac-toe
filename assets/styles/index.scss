@@ -3,11 +3,9 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 body {
   margin: 20px;
-  margin-top: 10px;
 }
 h1 {
   text-align: center;
-  text-color: blue;
 }
 
 .row {
@@ -21,4 +19,7 @@ h1 {
   align-items: center;
   justify-content: center;
   background-color: orange;
+}
+.square{
+
 }

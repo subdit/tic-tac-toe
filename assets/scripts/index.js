@@ -8,6 +8,19 @@
 
 $(() => {
   // your JS code goes here
-  //var player1 = function () {
-
+  // var start = function ()
 })
+//const PLAYER_TOKEN = 'X'
+//const COMPUTER_TOKEN ='Y'
+
+//$(document).start(function () {
+  //const grid = [
+  [' ', ' ', ' '],
+  [' ', ' ', ' '],
+  [' ', ' ', ' ']
+// ]
+
+// $('.square').click(function () {
+// $(this).html(PLAYER_TOKEN)
+// })
+// })
