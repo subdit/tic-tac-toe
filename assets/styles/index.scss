@@ -5,21 +5,18 @@ body {
   margin: 20px;
 }
 h1 {
-  text-align: center;
+  text-align: left;
 }
 
 .row {
   display: flex;
 }
 .row div {
-  display: flex;
-  border: 2px solid black;
-  width: 100px;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-  background-color: orange;
-}
-.square {
-
+ display: flex;
+ border: 2px solid black;
+ width: 100px;
+ height: 100px;
+ align-items: center;
+ justify-content: center;
+ background-color: orange;
 }
