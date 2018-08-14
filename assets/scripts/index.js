@@ -9,7 +9,8 @@
 $(() => {
 
 })
-//  function gameBoard(){
+// let boardGame
+// const player = 'X'
 
 //  function gameStart () {
 //  player.turn = 'X'
@@ -44,7 +45,7 @@ $(() => {
 
 //      function winner = ('winningGame') {
 //        let (winner === winningGame)
-//        setMessage('You won')
+//        setMessage('You win')
 //      } else{
 //        gamePlayOver!==='winningGame'
 //        setMessage('You lose')
@@ -57,5 +58,4 @@ $(() => {
 //      if(gamePlayOver.reset)
 //      setMessage(player.message + 'Hit Game Reset button.')
 //   }
-// }
-//  })
+// } })
