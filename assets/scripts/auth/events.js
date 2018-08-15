@@ -20,7 +20,7 @@ const onSignIn = function (event) {
   console.log('submitted the form')
   console.log('event.target:', event.target)
   const data = getFormFields(event.target)
-  console.lg('data from the form:', data)
+  console.log('data from the form:', data)
 
   api.signIn(data)
     .then(ui.signInSuccess)

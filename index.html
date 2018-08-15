@@ -30,36 +30,36 @@
             <button type="submit">Sign In</button>
          </fieldset>
       </form>
-      <form id="change-password">
+      <form class='hidden' id="change-password">
          <fieldset>
             <legend>Change Password</legend>
-            <input type="password" name="password[old]" placeholder="Old Password">
-            <input type="password" name="password[new]" placeholder="New Password">
-            <button type="change password">Change Password</button>
+            <input type="password" name="passwords[old]" placeholder="Old Password">
+            <input type="password" name="passwords[new]" placeholder="New Password">
+            <button type="submit">Change Password</button>
          </fieldset>
       </form>
       <div id='message'>Message</div>
 
-      <div>
+      <div id='game-board' class='hidden'>
         <div class="row">
-            <div class="square" id="1" onClick="nextMove(this.id)"></div>
-            <div class="square" id="2" onclick="nextMove(this.id)"></div>
-            <div class="square" id="3" onClick="nextMove(this.id)"></div>
+            <div class="square" id="0"></div>
+            <div class="square" id="1"></div>
+            <div class="square" id="2"></div>
          </div>
          <div class="row">
-            <div class="square" id="4" onClick="nextMove(this.id)"></div>
-            <div class="square" id="5" onClick="nextMove(this.id)"></div>
-            <div class="square" id="6" onclick="nextMove(this.id)"></div>
+            <div class="square" id="3"></div>
+            <div class="square" id="4"></div>
+            <div class="square" id="5"></div>
          </div>
          <div class="row">
-            <div class="square" id="7" onclick="nextMove(this.id)"></div>
-            <div class="square" id="8" onClick="nextMove(this.id)"></div>
-            <div class="square" id="9" onclick="nextMove(this.id)"></div>
+            <div class="square" id="6"></div>
+            <div class="square" id="7"></div>
+            <div class="square" id="8"></div>
          </div>
-         </div>
-          <div>
-           <button id='reset'>Reset Game </button>
-           <button id='sign-out'>Sign Out</button>
-         </div>
+       </div>
+      <div id='buttons' class='hidden'>
+         <button id='reset'>Reset Game </button>
+         <button id='sign-out'>Sign Out</button>
+       </div>
    </body>
 </html>
