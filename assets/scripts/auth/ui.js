@@ -6,7 +6,7 @@ const signUpSuccess = function () {
   $('#message').text('Successfully registered')
   $('#message').removeClass()
   $('#message').addClass('success')
-  $('#sign-up input')
+  $('#sign-up input').val('')
 }
 const signUpFail = function () {
   console.log('i failed')
@@ -19,6 +19,7 @@ const signInSuccess = function (response) {
   store.user = response.user
   $('#sign-up').addClass('hidden')
   $('#sign-in').addClass('hidden')
+  $('#sign-in input').val('')
 
   $('#change-password').removeClass('hidden')
   $('#game-board').removeClass('hidden')
@@ -27,7 +28,7 @@ const signInSuccess = function (response) {
   $('#message').text('Successfully Signed in')
   $('#message').removeClass()
   $('#message').addClass('success')
-  $('#sign-in input')
+  $('#sign-in input').val('')
 }
 
 const signInFail = function () {
@@ -37,21 +38,20 @@ const signInFail = function () {
 }
 
 const changePassWordSuccess = function (response) {
+  store.user = response.user
   $('#message').text('Successfully Change-password')
   $('#message').removeClass()
   $('#message').addClass('success')
-  $('#sign-in input')
+  $('#changePassWord input').val('')
 }
 
 const changePassWordFail = function () {
   $('#message').text('Change Password fail. Check that your password match')
   $('#message').removeClass()
   $('#message').addClass('fail')
+  $('#changePassWord input').val('')
 }
 const signOutSuccess = function (response) {
-  store.user =
-
-  $('#sign-up').removeClass('hidden')
   $('#sign-in').removeClass('hidden')
 
   $('#change-password').addClass('hidden')
@@ -61,14 +61,14 @@ const signOutSuccess = function (response) {
   $('#message').text('Successfully Sign-out')
   $('#message').removeClass()
   $('#message').addClass('success')
-  $('#sign-out input')
+  $('#sign-out input').val('')
 }
 
 const signOutFail = function (response) {
   $('#message').text('Sign Out fail')
   $('#message').removeClass()
   $('#message').addClass('fail')
-  $('#sign-out input')
+  $('#sign-out input').val('')
 }
 
 module.exports = {

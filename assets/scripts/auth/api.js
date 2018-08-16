@@ -18,7 +18,7 @@ const signIn = function (data) {
     data
   })
 }
-const changePassword = function (data) {
+const changePassWord = function (data) {
   console.log('store in change password', store)
   return $.ajax({
     url: config.apiUrl + '/change-password',
@@ -50,7 +50,7 @@ const signOut = function (data) {
 module.exports = {
   signUp,
   signIn,
-  changePassword,
+  changePassWord,
   signOut
 //  nextMove
 
