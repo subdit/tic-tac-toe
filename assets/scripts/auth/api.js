@@ -39,19 +39,25 @@ const signOut = function (data) {
     }
   })
 }
-// const nextMove = function (data) {
-// console.log('api URL is', config.apiUrl)
-//  return $.ajax({
-//    url: config.apiUrl + '/nextMove',
-//    method: 'POST'
-//  }
-// })
+// const updateGame = function () {
+//  event.preventDefault()
+// make sure that the space is blank and the game isn't //  over
+//  if (store.game.cells[this.id] === '' && store.game.over === false) {
+// gater data for AJAX call
+//    let data = {
+//      'game': {
+//         'cell': {
+// turn the id of the div from a string to an  // integer
+// 'index': parseInt(this.id),
+// 'value': gamePlay.toggleXandO()
+//         },
+//         'over': winTie.isGameOver(this.id)
 
 module.exports = {
   signUp,
   signIn,
   changePassWord,
   signOut
-//  nextMove
+// resetGame
 
 }

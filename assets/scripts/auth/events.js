@@ -43,15 +43,18 @@ const onSignOut = function (event) {
     .then(ui.signOutSuccess)
     .catch(ui.signOutFail)
 }
-// const onClick = function (event) {
-//  event.preventDefault()
+// const onResetGame = function (event) {
 //  console.log('click')
+//  api.signOut()
+//    .then(ui.signOutSuccess)
+//    .catch(ui.signOutFail)
+// }
 const addHandlers = function () {
   $('#sign-up').on('submit', onSignUp)
   $('#sign-in').on('submit', onSignIn)
   $('#change-password').on('submit', onChangePassWord)
   $('#sign-out').on('click', onSignOut)
-//  $('#nextMove').on('square', nextMove(this))
+  // $('#reset-game').on('click', onResetGame)
 }
 
 module.exports = {

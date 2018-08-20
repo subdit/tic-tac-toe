@@ -37,19 +37,25 @@ const signInFail = function () {
   $('#message').addClass('fail')
 }
 
-const changePassWordSuccess = function (response) {
-  store.user = response.user
+const changePassWordSuccess = function () {
+  $('#sign-up').addClass('hidden')
+  $('#sign-in').addClass('hidden')
+  $('#sign-in input').val('')
+
+  $('#change-password').removeClass('hidden')
+  $('#game-board').removeClass('hidden')
+  $('#buttons').removeClass('hidden')
   $('#message').text('Successfully Change-password')
   $('#message').removeClass()
   $('#message').addClass('success')
-  $('#changePassWord input').val('')
+  $('#change-password input').val('')
 }
 
 const changePassWordFail = function () {
   $('#message').text('Change Password fail. Check that your password match')
   $('#message').removeClass()
   $('#message').addClass('fail')
-  $('#changePassWord input').val('')
+  $('#change-password input').val('')
 }
 const signOutSuccess = function (response) {
   $('#sign-in').removeClass('hidden')
@@ -80,4 +86,5 @@ module.exports = {
   changePassWordFail,
   signOutSuccess,
   signOutFail
+// resetGame
 }
