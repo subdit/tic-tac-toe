@@ -1,8 +1,8 @@
 The tic-tac-toe-project
 subdit@github
-# tic-tac-toe-client
+# tic-tac-toe-game
 
-This tic-tac-toe project is absolutely for beginner and still have a lot of work to finish up.
+This tic-tac-toe project is absolutely for beginner and have more rooms to finish in the sytle and add more features function as you would love to.
 
 ## Getting Started
 
@@ -10,8 +10,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+folow the steps that you need to install and how to install them
 
 ```
 The software you need is the template that is the best place to start https://git.generalassemb.ly/ga-wdi-boston/browser-template
 ```
+
+### "how to set up the API"
+this link provides the game project action by follow the RESTful style
+https://git.generalassemb.ly/ga-wdi-boston/game-project-api/blob/master/docs/game.md
+
+### tic-tac-toe from Wikipedia
+https://git.generalassemb.ly/ga-wdi-boston/gh-pages-deployment-guide
