@@ -22,7 +22,6 @@ const signInSuccess = function (response) {
   $('#sign-in input').val('')
 
   $('#change-password').removeClass('hidden')
-  $('#game-board').removeClass('hidden')
   $('#buttons').removeClass('hidden')
 
   $('#message').text('Successfully Signed in')
@@ -76,6 +75,23 @@ const signOutFail = function (response) {
   $('#message').addClass('fail')
   $('#sign-out input').val('')
 }
+const newGameSuccess = function (data) {
+  $('#gameBoard').show()
+  $('#play-count').html(function (i, val) { return +val + 1 })
+  $('#o-winner-message').html('')
+  $('#x-winner-message').html('')
+  store.game = data.game
+  console.log(data.game)
+}
+const newGameFail = function (data) {
+}
+const updateMove = function (data) {
+}
+const clearData = function () {
+  $('#sign-up input').val('')
+  $('#sign-in input').val('')
+  $('#change-password input').val('')
+}
 
 module.exports = {
   signUpSuccess,
@@ -85,6 +101,9 @@ module.exports = {
   changePassWordSuccess,
   changePassWordFail,
   signOutSuccess,
-  signOutFail
-// resetGame
+  signOutFail,
+  newGameSuccess,
+  newGameFail,
+  updateMove,
+  clearData
 }

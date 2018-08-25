@@ -39,25 +39,46 @@ const signOut = function (data) {
     }
   })
 }
-// const updateGame = function () {
-//  event.preventDefault()
-// make sure that the space is blank and the game isn't //  over
-//  if (store.game.cells[this.id] === '' && store.game.over === false) {
-// gater data for AJAX call
-//    let data = {
-//      'game': {
-//         'cell': {
-// turn the id of the div from a string to an  // integer
-// 'index': parseInt(this.id),
-// 'value': gamePlay.toggleXandO()
-//         },
-//         'over': winTie.isGameOver(this.id)
+const newGame = function () {
+  console.log()
+  return $.ajax({
+    method: 'POST',
+    url: config.apiUrl + '/game',
+    header: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+const updateMove = function (index, value, over) {
+  // console.log ('store is', store)
+  console.log('store.user is', store.user)
+  console.log('store.game is', store.game)
 
+  gameData.game = store.game
+  console.log('gameData.game is', gameData.game)
+  return $.ajax({
+    method: 'PATCH',
+    url: config.apiUrl + '/games/' + store.game.id,
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data: {
+      'game': {
+        'cell': {
+          'index': index,
+          'value': value
+        },
+        'over': over
+      }
+    }
+  })
+}
 module.exports = {
   signUp,
   signIn,
   changePassWord,
-  signOut
-// resetGame
+  signOut,
+  newGame,
+  updateMove
 
 }

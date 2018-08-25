@@ -43,21 +43,39 @@ const onSignOut = function (event) {
     .then(ui.signOutSuccess)
     .catch(ui.signOutFail)
 }
-// const onResetGame = function (event) {
-//  console.log('click')
-//  api.signOut()
-//    .then(ui.signOutSuccess)
-//    .catch(ui.signOutFail)
+// const onUpdateMove = function (event) {
+//   event.preventDefault()
+//   api.updateMove()
+//     .then(ui.updateMoveSuccess)
+//     .catch(ui.updateMoveFail)
+//     console.log(gameBoard)
+//
+// }
+// const onNewGame = function (event) {
+//   event.preventDefault()
+//   console.log('click')
+//   api.newgame()
+//     .then(ui.newGameSuccess)
+//     .catch(ui.newGameFail)
+// }
+// const onGameBoard = function (event) {
+//   gameBoard.splice(event.target.id, 1, currentPlayer)
+//   console.log(gameBoard)
+//   $(this).text(currentPlayer)
+//   checkWin()
+//   switchPlayer()
+//   notClick()
 // }
 const addHandlers = function () {
   $('#sign-up').on('submit', onSignUp)
   $('#sign-in').on('submit', onSignIn)
   $('#change-password').on('submit', onChangePassWord)
   $('#sign-out').on('click', onSignOut)
-  // $('#reset-game').on('click', onResetGame)
+  // $('#.square').on('click, onGameBoard')
+  // $('#new-game').on('click', onNewGame)
+  // $('.square').on('click', onUpdateMove)
 }
 
 module.exports = {
   addHandlers // same as addHandlers: addHandlers
-
 }
