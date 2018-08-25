@@ -22,3 +22,7 @@ https://git.generalassemb.ly/ga-wdi-boston/game-project-api/blob/master/docs/gam
 
 ### tic-tac-toe from Wikipedia
 https://git.generalassemb.ly/ga-wdi-boston/gh-pages-deployment-guide
+
+## Wireframe
+this is a simple layout for the wireframe that can be a good start for the game.
+![]https://imgur.com/08Lk4qV
