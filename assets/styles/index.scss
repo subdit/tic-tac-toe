@@ -3,6 +3,8 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 body {
   margin: 20px;
+  background-color: #effeff;
+
 }
 h1 {
   text-align: left;
@@ -19,9 +21,11 @@ h1 {
     display: flex;
     align-items: center;
 
+
   }
   div {
     display: center;
+
   }
 
   .row div {
@@ -32,7 +36,8 @@ h1 {
     align-items: center;
     font-size: 95px;
     justify-content: center;
-    background-color: #effefe;
+    background-color: #efeffd;
+
   }
 
   button {

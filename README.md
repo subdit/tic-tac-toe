@@ -31,3 +31,11 @@ https://stackoverflow.com/questions/33428258/javascript-computer-ai
 ## Wireframe
 This is a simple layout for the wireframe that can be a good start for the game.
 ![]https://imgur.com/08Lk4qV
+
+## Troubleshoot and Debugging
+As the developer we will be using a lot of Troubleshooting and debugginh tools. I followed this link for troubleshooting and debuging in my project.
+ https://hacks.mozilla.org/2018/05/debugging-modern-web-applications/
+
+## How to use Google Chrome to inspect element
+This link helped me for inspecting and editing my appliction from the brower.
+:https://designtlc.com/use-chrome-inspector-edit-website-css/

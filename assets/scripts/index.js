@@ -116,6 +116,7 @@ $(() => {
     // in the cell and whether the game is over or not
     updateMove($(event.target).attr(id), currentPlayer, true)
   })
+
   $('#new-game').on('click', function (event) {
     // API call to create a game
 
