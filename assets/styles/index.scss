@@ -5,35 +5,37 @@ body {
   margin: 20px;
 }
 h1 {
-  text-align: center;
-  size: 50px;
+  text-align: left;
+  size: 75px;
+  font-style: normal;
+
 }
 
-.form {
+  .form {
   align-items: center;
-}
+  }
 
-.row {
-  display: flex;
-  align-items: center;
+  .row {
+    display: flex;
+    align-items: center;
 
-}
+  }
+  div {
+    display: center;
+  }
 
-.row div {
-  display: flex;
-  border: 3px solid black;
-  width: 120px;
-  height: 120px;
-  align-items: center;
-  justify-content: center;
-  background-color: #effeff;
-}
+  .row div {
+    display: flex;
+    border: 3px solid black;
+    width: 120px;
+    height: 120px;
+    align-items: center;
+    font-size: 95px;
+    justify-content: center;
+    background-color: #effefe;
+  }
 
-.game-board {
-  font-size: 35px;
-}
-
-button {
-  padding: 5px;
-  margin: 2px;
-}
+  button {
+    padding: 5px;
+    margin: 2px;
+  }

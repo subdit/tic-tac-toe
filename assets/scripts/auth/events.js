@@ -44,13 +44,11 @@ const onSignOut = function (event) {
     .catch(ui.signOutFail)
 }
 // const onUpdateMove = function (event) {
-//   event.preventDefault()
-//   api.updateMove()
-//     .then(ui.updateMoveSuccess)
-//     .catch(ui.updateMoveFail)
-//     console.log(gameBoard)
-//
-// }
+//  event.preventDefault()
+//  api.updateMove()
+//    .then(ui.updateMoveSuccess)
+//    .catch(ui.updateMoveFail)
+
 // const onNewGame = function (event) {
 //   event.preventDefault()
 //   console.log('click')
@@ -59,9 +57,9 @@ const onSignOut = function (event) {
 //     .catch(ui.newGameFail)
 // }
 // const onGameBoard = function (event) {
-//   gameBoard.splice(event.target.id, 1, currentPlayer)
+//  gameBoard.splice(event.target.id, 1, currentPlayer)
 //   console.log(gameBoard)
-//   $(this).text(currentPlayer)
+//  $(this).text(currentPlayer)
 //   checkWin()
 //   switchPlayer()
 //   notClick()
