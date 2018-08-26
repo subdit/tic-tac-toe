@@ -2,7 +2,7 @@ The tic-tac-toe-project
 subdit@github
 # tic-tac-toe-game
 
-This tic-tac-toe project is my very first as developer and definately have more room to improve, for example to finish the sytle and add more features function as you'd like such as HTML and CSS styling.
+This tic-tac-toe project is my very first as developer and definitely have more room to improve, for example to finish the sytle and add more features function as you'd like such as HTML and CSS styling.
 
 ## Getting Started
 
