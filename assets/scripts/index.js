@@ -51,7 +51,7 @@ $(() => {
   auth.addHandlers()
   // add click event to board using class `square`
   $('.square').on('click', function (event) {
-    console.log('I was clicked')
+    // console.log('I was clicked')
 
     // - when click event happens, get the ID of the element that was clicked
     const id = $(event.target).attr('id')
@@ -114,11 +114,11 @@ $(() => {
     // API call to update the game
     // updateMove should be passed index of cell clicked, value that was placed
     // in the cell and whether the game is over or not
-    updateMove()
+    updateMove($(event.target).attr(id), currentPlayer, true)
   })
-
   $('#new-game').on('click', function (event) {
     // API call to create a game
+
     console.log('new game clicked')
     $('#game-board').removeClass('hidden')
     gameBoard = ['', '', '', '', '', '', '', '', '']

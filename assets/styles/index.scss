@@ -5,22 +5,34 @@ body {
   margin: 20px;
 }
 h1 {
-  text-align: left;
+  text-align: center;
+  size: 50px;
+}
+
+.form {
+  align-items: center;
 }
 
 .row {
   display: flex;
+  align-items: center;
 
 }
+
 .row div {
- display: flex;
- border: 2px solid black;
- width: 100px;
- height: 100px;
- align-items: center;
- justify-content: center;
- background-color: #effeff;
+  display: flex;
+  border: 3px solid black;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  background-color: #effeff;
 }
+
+.game-board {
+  font-size: 35px;
+}
+
 button {
   padding: 5px;
   margin: 2px;
