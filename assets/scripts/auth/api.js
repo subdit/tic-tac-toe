@@ -80,6 +80,7 @@ module.exports = {
   changePassWord,
   signOut,
   newGame,
-  updateMove
+  updateMove,
+  gameData
 
 }
